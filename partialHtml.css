@@ -1,0 +1,54 @@
+﻿<div id="border" oncontextmenu="return false;">
+    <div class="clearfix">
+        <div id="logo_cont">
+            <img id="logo" src="/adfs/portal/css/logo.png" />
+        </div>
+        <div id="close_cont">
+            <img id="close" src="/adfs/portal/css/close.png" onclick="doClose();" />
+        </div>
+    </div>
+    <hr id="divider" />
+    <div id="header2_cont">
+        <h2 id="header2">&nbsp;</h2>
+    </div>
+    <form id="loginForm" method="post" onkeypress="if (event && event.keyCode == 13) Login.submitLoginRequest();" autocomplete="off">
+        <div class="clearfix">
+            <div class="label_cont"><span class="label">Username:</span></div>
+            <div class="textbox_cont"><input type="text" id="userNameInput" class="textbox" onchange="userNameInput_Change()" onfocus="disableAutoComplete();" autocomplete="off" /><input type="hidden" id="userNameInputHidden" name="UserName" /></div>
+        </div>
+        <div style="height:5px;"></div>
+        <div class="clearfix">
+            <div class="label_cont"><span class="label">Password:</span></div>
+            <div class="textbox_cont"><input type="password" id="passwordInput" name="Password" class="textbox" onfocus="disableAutoComplete();" autocomplete="new-password" /></div>
+        </div>
+        <input type="hidden" name="Kmsi" value="true" />
+        <input type="hidden" name="AuthMethod" value="FormsAuthentication" />
+        <div id="button_cont">
+            <button type="button" class="button button-primary" onkeypress="if (event && event.keyCode == 32) Login.submitLoginRequest();" onclick="return Login.submitLoginRequest();">Submit</button>
+            <button type="button" class="button button-neutral" onclick="doReset();">Reset</button>
+        </div>
+    </form>
+    <div id="forgotPassword_cont">
+        <a class="link" onclick="forgotPassword();">Forgot Password?</a>
+    </div>
+    <div id="error">
+        <label id="errorText"></label>
+    </div>
+    <div id="announce">
+        <span class="label">Announcements</span>
+    </div>
+    <div id="announce_cont">
+        Due to scheduled maintenance, GPConnect services will not be available on 11 November 2016 (Friday) from 05:00 pm to 6:00 pm.
+        <hr />
+        Due to scheduled maintenance, GPConnect services will not be available on 11 October 2016 (Friday) from 05:00 pm to 6:00 pm.
+        <hr />
+        Due to scheduled maintenance, GPConnect services will not be available on 11 September 2016 (Friday) from 05:00 pm to 6:00 pm.
+        <hr />
+        Due to scheduled maintenance, GPConnect services will not be available on 11 August 2016 (Friday) from 05:00 pm to 6:00 pm.
+        <hr />
+        Due to scheduled maintenance, GPConnect services will not be available on 11 July 2016 (Friday) from 05:00 pm to 6:00 pm.
+    </div>
+    <div id="footer_cont">
+        Having trouble with login?<br />Please contact service desk at 6871 4398
+    </div>
+</div>
