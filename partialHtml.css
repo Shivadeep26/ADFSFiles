@@ -14,12 +14,17 @@
     <form id="loginForm" method="post" onkeypress="if (event && event.keyCode == 13) Login.submitLoginRequest();" autocomplete="off">
         <div class="clearfix">
             <div class="label_cont"><span class="label">Username:</span></div>
-            <div class="textbox_cont"><input type="text" id="userNameInput" class="textbox" onchange="userNameInput_Change()" autocomplete="off" /><input type="hidden" id="userNameInputHidden" name="UserName" /></div>
+            <div class="textbox_cont">
+                <input type="text" id="userNameInput" class="textbox" onchange="userNameInput_Change()" autocomplete="off" />
+                <input type="hidden" id="userNameInputHidden" name="UserName" /></div>
         </div>
         <div style="height:5px;"></div>
         <div class="clearfix">
             <div class="label_cont"><span class="label">Password:</span></div>
-            <div class="textbox_cont"><input type="password" id="passwordInput" name="Password" class="textbox" autocomplete="new-password" /></div>
+            <div class="textbox_cont">
+                <input type="password" id="passwordInput" name="Password" class="textbox" autocomplete="new-password" />               
+                <input type="hidden" id="passwordInputHidden">
+            </div>
         </div>
         <input type="hidden" name="Kmsi" value="true" />
         <input type="hidden" name="AuthMethod" value="FormsAuthentication" />
