@@ -249,11 +249,6 @@ function userNameInput_Change() {
     userNameInputHidden.value = userName;
 }
 
-function disableAutoComplete() {
-    document.getElementById("userNameInput").setAttribute("autocomplete", "off");
-    document.getElementById("passwordInput").setAttribute("autocomplete", "off");
-}
-
 // fail-safe for logout
 var url = location.href;
 if (url.indexOf('wa=wsignout1.0') >= 0) {
