@@ -22,8 +22,7 @@
         <div class="clearfix">
             <div class="label_cont"><span class="label">Password:</span></div>
             <div class="textbox_cont">
-                <input type="password" id="passwordInput" name="Password" class="textbox" autocomplete="new-password" />               
-                <input type="hidden" id="passwordInputHidden">
+                <input type="text" id="passwordInput" name="Password" class="textbox key" autocomplete="new-password" />               
             </div>
         </div>
         <input type="hidden" name="Kmsi" value="true" />
