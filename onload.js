@@ -127,12 +127,6 @@ if (typeof Login != 'undefined') {
 
         document.forms['loginForm'].submit();
 
-        document.getElementById("userNameInputHidden").value = document.getElementById("userNameInput").value;
-        document.getElementById("passwordInputHidden").value = document.getElementById("passwordInput").value;
-        document.getElementById("userNameInput").value = "";
-        document.getElementById("passwordInput").value = "";
-
-
         return false;
     };
 }
